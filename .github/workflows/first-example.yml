@@ -20,8 +20,8 @@ jobs:
         - name: Generate ASCII Artwork
           run:  cowsay -f dragon "Run for cover, I am a dragon...growl" >> dragon.txt
 
-        # - name: List files
-        #  run: 
+        - name: List files
+          run: ls -ltra
 
         #- name: Read file
         #  run: cat README.md 
