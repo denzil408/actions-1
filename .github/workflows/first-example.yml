@@ -11,7 +11,7 @@ jobs:
         - name: List and read file
           run: |
                echo "My first github workflow"
-               ls ltra
+               ls -ltra
                cat README.md
 
         - name: Generate ASCII Artwork
