@@ -13,5 +13,5 @@ jobs:
         
                 
         - name: Executing shell script
-          run: ./ascii-script.sh
+          run: bash .github/workflows/ascii-script.sh
 
