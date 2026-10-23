@@ -8,21 +8,10 @@ jobs:
         - name: checkout Repo
           uses: actions/checkout@v7
          
-        - name: List and read file
-          run: |
-               echo "My first github workflow"
-               ls -ltra
-               cat README.md
-
-        - name: Install cowsay
-          run:  sudo apt-get update && sudo apt-get install -y cowsay
-
-        - name: Generate ASCII Artwork
-          run:  cowsay -f dragon "Run for cover, I am a dragon...growl" >> dragon.txt
-
-        - name: List files
+        - name: List repo files
           run: ls -ltra
-
-        - name: View file
-          run: cat dragon.txt
+        
+                
+        - name: Executing shell script
+          run: ./ascii-script.sh
 
